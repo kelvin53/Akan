@@ -1,24 +1,38 @@
+
 <!DOCTYPE html>
 <html>
  <head>
  <meta charset="UTF-8" />
  <title>Akan App</title>
+ <link href="styles.css" type="text/css" rel="stylesheet">
+
  </head>
  <body>
- <h1>Akan Name Equivalent Generator</h1>
- <section>
-    <form id="form">
-        <p><label>Birthday: <input name="" /></label></p>
-        <p><label>Year: <input name="title" /></label></p>
+<h1>Akan Name Equivalent Generator</h1>
+<h2>Akan Naming Ceremony</h2>
+<p>The Akan people of Ghana name a newborn child on the eighth day after they’re born. 
+    The new born child is usually named after relatives (dead or alive), or the circumstances 
+    surrounding his or her birth. The Akan traditionally leave the naming ceremony until the 
+    eighth day as a way to confirm that the child has come to stay and will not be returning to back to
+    the world of the ancestors. It’s also common for the Akan to name a child after the day 
+    of the week that they were born.You could also find your equivalent akan name depending on the day 
+    of the week you were born!! <em>Lets give it a try.</em> </p>
+<section>
+     <form id="form">        
+        <p><label>Date Born: <input name=""placeholder="i.e 10" id="b" /></label></p>
+        <p><label>Month: <input name="" id="m" placeholder="e.g 11 for November" /></label></p>
+        <p><label>Year: <input name="title" id="y" placeholder="i.e 1991" /></label></p>
        <p><label>Gender:</label>
-        <select name="gender">
+        <select name="gender" id="g">
             <option value="value1"> Male </option>
             <option value="value2">Female</option>
            </select>
-        <p><button type="button">submit</button></p>
+           <button type="button" value="Submit" name="Button" onclick="akanName()">Submit</button>
        </form>
+       <h1 id="akan"><strong>Name</strong></h1>
 
  </section>
+ <script type="text/javascript" src="scripts.js"></script>
  </body>
 </html>
 
